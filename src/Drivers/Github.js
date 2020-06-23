@@ -145,9 +145,9 @@ class Github extends OAuth2Scheme {
      * Get user email address by making another HTTP request
      * only when the scopes includes user or user:email
      */
-    if (_.size(_.intersection(this.scope, ['user', 'user:email']))) {
-      response.body.email = await this._getUserEmail(accessToken)
-    }
+    // if (_.size(_.intersection(this.scope, ['user', 'user:email']))) {
+      // response.body.email = await this._getUserEmail(accessToken)
+    // }
 
     return response.body
   }
